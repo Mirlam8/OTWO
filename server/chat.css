@@ -1,0 +1,24 @@
+#order
+{
+	overflow-y		: scroll;
+	width			: 99%;
+	height			: 500px;
+	margin			: 0;
+	padding			: 5px;
+	border			: 1px solid #ccc;
+	font-family		: 'dotum', '돋움';
+}
+#order div
+{
+	float			: left;
+	width			: 100%;
+	font-weight		: 700;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+}
+
+#order div p {
+  margin: 10px;
+}
+
+

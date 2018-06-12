@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.10.11
+- http://www.phpmyadmin.net
+-
+- 호스트: localhost
+- 처리한 시간: 18-06-12 06:49
+- 서버 버전: 5.1.73
+- PHP 버전: 7.0.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="eatery" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="main_menu">
+                CREATE TABLE `main_menu` (
+                  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(30) NOT NULL,
+                  `price` int(11) NOT NULL,
+                  `s_info` varchar(50) DEFAULT NULL,
+                  `info` text,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="order_menu">
+                CREATE TABLE `order_menu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `time` datetime NOT NULL,
+                  `table_num` tinyint(4) NOT NULL,
+                  `order_menu` text NOT NULL,
+                  `total_price` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="side_menu">
+                CREATE TABLE `side_menu` (
+                  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(30) NOT NULL,
+                  `price` int(11) NOT NULL,
+                  `s_info` varchar(50) DEFAULT NULL,
+                  `info` text,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - 데이터베이스: 'eatery'
+    -->
+    <database name="eatery">
+        <!-- 테이블 main_menu -->
+        <table name="main_menu">
+            <column name="id">1</column>
+            <column name="name">돈가스</column>
+            <column name="price">6000</column>
+            <column name="s_info">바삭바삭 돈가스</column>
+            <column name="info">국산돼지로 만든 수제돈가스입니다</column>
+        </table>
+        <table name="main_menu">
+            <column name="id">2</column>
+            <column name="name">오므라이스</column>
+            <column name="price">6000</column>
+            <column name="s_info">계란이불 볶음밥</column>
+            <column name="info">새콤달콤 수제 소스 오므라이스입니다</column>
+        </table>
+        <table name="main_menu">
+            <column name="id">3</column>
+            <column name="name">제육볶음</column>
+            <column name="price">6000</column>
+            <column name="s_info">매콤달콤 제육볶음</column>
+            <column name="info">국산돼지 밥도둑 제육볶음입니다</column>
+        </table>
+        <table name="main_menu">
+            <column name="id">4</column>
+            <column name="name">라볶이</column>
+            <column name="price">5000</column>
+            <column name="s_info">국민간식 라볶이</column>
+            <column name="info">쫄깃한 떡과 꼬들한 면이 있는 대표분식입니다</column>
+        </table>
+        <table name="main_menu">
+            <column name="id">5</column>
+            <column name="name">칼국수</column>
+            <column name="price">5000</column>
+            <column name="s_info">깊고 시원한 칼국수</column>
+            <column name="info">들깨를 듬뿍 넣어 고소한 칼국수입니다</column>
+        </table>
+        <!-- 테이블 order_menu -->
+        <table name="order_menu">
+            <column name="id">99</column>
+            <column name="time">2018-06-12 15:27:03</column>
+            <column name="table_num">5</column>
+            <column name="order_menu">제육볶음 1   </column>
+            <column name="total_price">6000</column>
+        </table>
+        <table name="order_menu">
+            <column name="id">98</column>
+            <column name="time">2018-06-12 15:26:27</column>
+            <column name="table_num">5</column>
+            <column name="order_menu">돈가스 1   오므라이스 1   </column>
+            <column name="total_price">12000</column>
+        </table>
+        <!-- 테이블 side_menu -->
+        <table name="side_menu">
+            <column name="id">101</column>
+            <column name="name">감자튀김</column>
+            <column name="price">3000</column>
+            <column name="s_info">바삭하고 고소한 감자튀김</column>
+            <column name="info">먹기좋은 크기로 노릇하게 튀긴 감자튀김입니다</column>
+        </table>
+        <table name="side_menu">
+            <column name="id">102</column>
+            <column name="name">치즈스틱</column>
+            <column name="price">3000</column>
+            <column name="s_info">쭉쭉 늘어나는 치즈스틱</column>
+            <column name="info">치즈가 듬뿍 들어 끝없이 늘어나는 치즈스틱입니다</column>
+        </table>
+        <table name="side_menu">
+            <column name="id">103</column>
+            <column name="name">새우튀김</column>
+            <column name="price">4000</column>
+            <column name="s_info">통통하고 바삭한 새우튀김</column>
+            <column name="info">최고의 감칠맛을 느낄 수 있는 새우튀김입니다</column>
+        </table>
+        <table name="side_menu">
+            <column name="id">104</column>
+            <column name="name">콜라</column>
+            <column name="price">1000</column>
+            <column name="s_info">시원한 콜라</column>
+            <column name="info">국민 탄산음료 콜라입니다</column>
+        </table>
+        <table name="side_menu">
+            <column name="id">105</column>
+            <column name="name">사이다</column>
+            <column name="price">1000</column>
+            <column name="s_info">시원한 사이다</column>
+            <column name="info">국민 탄산음료 사이다입니다</column>
+        </table>
+    </database>
+</pma_xml_export>

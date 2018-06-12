@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+@import url('https://fonts.googleapis.com/css?family=Gugi|Nanum+Pen+Script');
+html{
+  background: url('./data/pic/bgimge.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
+html, body {
+  margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#menu {
+  font-family: 'Gugi', cursive;
+  z-index:200;
+  background: url('./data/pic/restaurant.jpg') no-repeat center center fixed;
+  position: fixed; top:0; left:0;
+  background-size:cover;
+  width: 100%;
+  height: 20%;
+  text-align:center;
+}
+
+header li {
+  list-style:none;
+  padding-left:0px;
+  text-align:center;
+}
+
+#menu a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#list {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding-left:0;
+}
+
+#list a {
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight:bold;
+  color: snow;
+  font-size: 35px;
+}
+
+#main_menu {
+  text-align:center;
+  margin-top:30%;
+  margin-bottom:30%;
+}
+
+#one_menu {
+  top:20%;
+  z-index:100;
+  color: white;
+  /*margin-bottom: 50px;*/
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align:center;
+}
+
+#menu_table {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 320px;
+  border: 4px solid gray;
+  background-color: black;
+  margin:auto;
+}
+
+#menu_table h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed gray;
+}
+
+#table-responsive {
+  font-size:20px;
+  font-family: 'Nanum Pen Script', cursive;
+  background: url('./data/pic/order2.jpg') no-repeat center center fixed;
+  position: fixed; top:20%; bottom:10%;
+  background-size:cover;
+  width: 100%;
+  height: auto;
+  text-align:center;
+  margin:auto;
+}
+
+.table-bordered {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 4px solid gray;
+}
+
+#welcome {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:30px;
+  z-index:100;
+  background: url('./data/pic/welcome.jpg') no-repeat center center fixed;
+  position: fixed; top:20%; bottom:10%;
+  background-size:cover;
+  width: 100%;
+  height: auto;
+  color: white;
+  display: table-cell;
+  
+  line-height:auto;
+ 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcom_text{
+}
+footer {
+  font-family: 'Gugi', cursive;
+  z-index:200;
+  /*border: 4px solid #04B45F;*/
+  background: url('./data/pic/bottom.jpg') no-repeat center center fixed;
+  background-size:cover;
+  text-align:center;
+  position: fixed; bottom:0; left:0;
+  width: 100%;
+  height: 10%;
+  /*z-index: 4;*/
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#tale {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+}
+
+div {
+  text-align:center;
+}

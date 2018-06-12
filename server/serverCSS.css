@@ -1,0 +1,41 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.menu1, .menu2 {
+  display: block;
+  border: 1px solid gray;
+  text-align: center;
+}
+#b {
+  text-align: center;
+  border: 1px solid gray;
+}
+#no1{
+  height: auto;
+  border: 1px solid gray;
+}
+
+#order {
+  height: auto;
+}
+
+button {
+  width: 49%;
+}
+.new {
+  background-color: #f4a2a4;
+  -webkit-transition: all, 5s;
+  transition: all, 5s;
+  transition-property: background;
+  transition-duration: 10s;
+  transition-timing-function: linear;
+  transition-delay: 10s;
+}
+.new_end {
+  background-color: #FFFFFF;
+  
+}
